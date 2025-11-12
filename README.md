@@ -1,7 +1,7 @@
 # Twitch Mobile UI Automation (Pytest + Selenium)
 
 <p align="center">
-  <img src="./demo_run.gif" alt="Demo run" width="600"/>
+  <img src="./demo_run.gif" alt="Demo run" width="500"/>
 </p>
 
 
