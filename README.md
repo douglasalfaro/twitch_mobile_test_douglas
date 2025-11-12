@@ -116,15 +116,6 @@ SCREENSHOT_PATH = "output/final_view.png"
 
 
 
-## 📝 Notes & Decisions
-
- - Mobile emulation via Chrome’s predefined device profiles for deterministic viewport & UA
-
- - Robust selectors + fallbacks to handle Twitch’s dynamic SPA UI
-
- - Two-step scroll uses smooth, separated gestures for clear visibility in the GIF
-
- - Best-effort stream start (muted autoplay where possible) with popup handling
 
 ## 🧾 Run Proof
 
@@ -132,7 +123,7 @@ SCREENSHOT_PATH = "output/final_view.png"
 
  - After running pytest, open output/report.html for pass/fail and timing details
 
-## 🧠 Senior-Level Design Decisions
+## 🧠 Design Decisions
 
 - **Page Object Model (POM) Architecture:**  
   Each screen (Home, Search, Streamer) is isolated as a class, encapsulating selectors and actions.  
@@ -162,7 +153,7 @@ SCREENSHOT_PATH = "output/final_view.png"
 
 ---
 
-## 🚀 Why This Project Demonstrates Senior-Level Engineering
+## 🚀 Senior-Level Engineering
 
 - Architected for **growth and maintainability** (can scale to multiple Twitch features).  
 - **Automates a live, asynchronous, SPA-based mobile site** — complex real-world use case.  
