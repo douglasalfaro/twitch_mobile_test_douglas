@@ -1,3 +1,9 @@
+[![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)]()
+[![Selenium](https://img.shields.io/badge/Selenium-Automation-success?logo=selenium)]()
+[![Pytest](https://img.shields.io/badge/Pytest-Framework-orange?logo=pytest)]()
+[![Platform](https://img.shields.io/badge/Platform-Windows%20|%20Mac%20|%20Linux-lightgrey)]()
+[![License](https://img.shields.io/badge/License-MIT-yellow)]()
+
 # Twitch Mobile UI Automation (Pytest + Selenium)
 
 <p align="center">
@@ -148,8 +154,7 @@ SCREENSHOT_PATH = "output/final_view.png"
   Test data and environment config can easily be externalized (e.g., JSON, YAML, or environment variables).
 
 - **Error Resilience:**  
-  StreamerScreen methods use best-effort recovery (popup dismissal, retry playback) rather than hard failures,  
-  demonstrating real-world robustness expected in production UI automation.
+  StreamerScreen methods use best-effort recovery (popup dismissal, retry playback) rather than hard failures.
 
 ---
 
