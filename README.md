@@ -1,3 +1,5 @@
+# Twitch Mobile UI Automation (Pytest + Selenium)
+
 ![Python](https://img.shields.io/badge/Python-3.11+-blue?logo=python&logoColor=white)
 ![Selenium](https://img.shields.io/badge/Selenium-4.x-brightgreen?logo=selenium&logoColor=white)
 ![Pytest](https://img.shields.io/badge/Pytest-tested%20✔️-orange?logo=pytest)
@@ -5,7 +7,6 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 ![Automation](https://img.shields.io/badge/Framework-Page%20Object%20Model-critical)
 
-# Twitch Mobile UI Automation (Pytest + Selenium)
 
 <p align="center">
   <img src="./demo_run.gif" alt="Demo run" width="420"/>
