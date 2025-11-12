@@ -81,9 +81,12 @@ pytest
 
 ## 📦 Artifacts Produced
 
-> - output/report.html	    **Self-contained HTML report
-> - output/final_view.png   **Screenshot from the final page
-> - output/test.log	    **Clean log output
+| File | Description |
+|------|--------------|
+| `output/report.html` | 🧾 **Self-contained HTML test report** |
+| `output/final_view.png` | 📸 **Screenshot from the final loaded page** |
+| `output/test.log` | 🧹 **Clean log output (test execution details)** |
+
 
 
 ## ⚙️ Configuration
@@ -104,23 +107,24 @@ SCREENSHOT_PATH = "output/final_view.png"
 
 ## ✅ Expected Behavior
 
-- 1️⃣ Opens Twitch mobile site  
-- 2️⃣ Searches for the target game/channel  
-- 3️⃣ Scrolls twice through results (clearly visible)  
-- 4️⃣ Selects and opens a live stream  
-- 5️⃣ Waits for playback and takes a screenshot  
-- 6️⃣ Generates `output/report.html`
+1️⃣ Opens Twitch mobile site  
+2️⃣ Searches for the target game/channel  
+3️⃣ Scrolls twice through results (clearly visible)  
+4️⃣ Selects and opens a live stream  
+5️⃣ Waits for playback and takes a screenshot  
+6️⃣ Generates `output/report.html`
+
 
 
 ## 📝 Notes & Decisions
 
-> - Mobile emulation via Chrome’s predefined device profiles for deterministic viewport & UA
+ - Mobile emulation via Chrome’s predefined device profiles for deterministic viewport & UA
 
-> - Robust selectors + fallbacks to handle Twitch’s dynamic SPA UI
+ - Robust selectors + fallbacks to handle Twitch’s dynamic SPA UI
 
-> - Two-step scroll uses smooth, separated gestures for clear visibility in the GIF
+ - Two-step scroll uses smooth, separated gestures for clear visibility in the GIF
 
-Best-effort stream start (muted autoplay where possible) with popup handling
+ - Best-effort stream start (muted autoplay where possible) with popup handling
 
 ## 🧾 Run Proof
 
