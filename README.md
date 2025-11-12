@@ -74,12 +74,14 @@ pip install -r requirements.txt
 ```powershell
 pytest
 
+---
 
 ## Artifacts produced
 report.html (self-contained HTML report)
 output/final_view.png (screenshot from the final page)
 output/test.log (clean test log)
 
+---
 
 ## Configuration
 
@@ -93,6 +95,7 @@ IMPLICIT_WAIT = 0
 PAGELOAD_TIMEOUT = 45
 SCREENSHOT_PATH = "output/final_view.png"
 
+---
 
 ## ✅ Expected Behavior
 Opens Twitch mobile site
@@ -102,6 +105,7 @@ Selects and opens a live stream
 Waits for playback and takes a screenshot
 Generates report.html under /output
 
+---
 
 ## Notes & Decisions
 Mobile emulation via Chrome’s predefined device profiles (consistent viewport & UA).
@@ -109,10 +113,13 @@ Robust selectors + fallbacks to handle Twitch’s dynamic/Spa UI.
 Two-step scroll uses smooth, separated gestures for clear visibility in the GIF.
 Best-effort stream start (muted autoplay where possible) with popup handling.
 
+---
 
 ## Run Proof
 See the embedded demo GIF above.
 After pytest, open report.html for pass/fail and timing details.
+
+---
 
 ##Contact
 Douglas Alfaro
