@@ -1,11 +1,11 @@
 # Twitch Mobile UI Automation (Pytest + Selenium)
 
 <p align="center">
-  <img src="./demo_run.gif" alt="Demo run" width="300"/>
+  <img src="./demo_run.gif" alt="Demo run" width="420"/>
 </p>
 
-
-> **What this does**  
+> **What this does**
+>
 > - Opens **m.twitch.tv** in **mobile emulation** (iPhone 12 Pro by default)  
 > - Jumps directly to the **Search** view  
 > - Searches for a given term (default: **StarCraft II**)  
@@ -25,31 +25,33 @@
 ---
 
 ## 🗂️ Project Structure
+```text
 twitch_mobile_test_douglas/
 ├── core/
-│   ├── config.py           # Base URL, device name, timeouts, screenshot path
-│   ├── driver_setup.py     # Chrome mobile emulation, timeouts, driver init
-│   ├── waits.py            # Explicit wait helpers
-│   └── logging_setup.py    # Test log configuration
+│   ├── config.py            # Base URL, device name, timeouts, screenshot path
+│   ├── driver_setup.py      # Chrome mobile emulation, timeouts, driver init
+│   ├── waits.py             # Explicit wait helpers
+│   └── logging_setup.py     # Test log configuration
 │
 ├── screens/
-│   ├── home_screen.py      # Navigation to search page
-│   ├── search_screen.py    # Enter query, scroll twice, open first result
-│   └── streamer_screen.py  # Handle popups, start playback, wait for load
+│   ├── home_screen.py       # Navigation to search page
+│   ├── search_screen.py     # Enter query, scroll twice, open first result
+│   └── streamer_screen.py   # Handle popups, start playback, wait for load
 │
 ├── tests/
-│   ├── conftest.py         # Pytest fixtures (driver, logging, reporting)
-│   └── test_twitch_mobile.py  # Main UI test logic
+│   ├── conftest.py          # Pytest fixtures (driver, logging, reporting)
+│   └── test_twitch_mobile.py# Main UI test logic
 │
 ├── output/
-│   ├── report.html         # Generated test report
-│   ├── final_view.png      # Screenshot of final page
-│   └── test.log            # Clean log output
+│   ├── report.html          # Generated test report
+│   ├── final_view.png       # Screenshot of final page
+│   └── test.log             # Clean log output
 │
-├── demo_run.gif            # Demo animation of local test
-├── requirements.txt        # Dependencies
-├── pytest.ini              # Pytest configuration
-└── README.md               # Documentation
+├── demo_run.gif             # Demo animation of local test
+├── requirements.txt         # Dependencies
+├── pytest.ini               # Pytest configuration
+└── README.md                # Documentation
+
 
 ---
 
