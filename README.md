@@ -85,10 +85,12 @@ pytest
 > - output/final_view.png   **Screenshot from the final page
 > - output/test.log	    **Clean log output
 
-##⚙️ Configuration
 
-Edit core/config.py as needed:
-```powershell
+## ⚙️ Configuration
+
+Edit `core/config.py` as needed:
+
+```python
 BASE_URL = "https://m.twitch.tv/"
 SEARCH_TERM = "StarCraft II"   # task-required (you may change)
 CHANNEL_SLUG = ""              # optional: force a specific channel slug
@@ -96,6 +98,7 @@ DEVICE_NAME = "iPhone 12 Pro"  # Chrome mobile emulation device
 IMPLICIT_WAIT = 0
 PAGELOAD_TIMEOUT = 45
 SCREENSHOT_PATH = "output/final_view.png"
+
 ```
 
 ## ✅ Expected Behavior
