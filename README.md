@@ -1,6 +1,9 @@
 # Twitch Mobile UI Automation (Pytest + Selenium)
 
-![Demo run](./demo_run.gif)
+<p align="center">
+  <img src="./demo_run.gif" alt="Demo run" width="600"/>
+</p>
+
 
 > **What this does**  
 > - Opens **m.twitch.tv** in **mobile emulation** (iPhone 12 Pro by default)  
