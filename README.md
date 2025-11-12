@@ -56,7 +56,6 @@ twitch_mobile_test_douglas/
 
 ---
 
----
 
 ## 🧪 How to Run (Windows)
 
@@ -68,15 +67,17 @@ twitch_mobile_test_douglas/
 ```powershell
 py -m venv .venv
 .\.venv\Scripts\Activate.ps1
-
+```
 
 ### 2️⃣ Install dependencies
 ```powershell
 pip install -r requirements.txt
+```
 
 ### 3️⃣ Run tests (generates report + screenshot)
 ```powershell
 pytest
+```
 
 ## 📦 Artifacts Produced
 ###File
@@ -87,7 +88,7 @@ pytest
 ##⚙️ Configuration
 
 Edit core/config.py as needed:
-
+```powershell
 BASE_URL = "https://m.twitch.tv/"
 SEARCH_TERM = "StarCraft II"   # task-required (you may change)
 CHANNEL_SLUG = ""              # optional: force a specific channel slug
@@ -95,7 +96,7 @@ DEVICE_NAME = "iPhone 12 Pro"  # Chrome mobile emulation device
 IMPLICIT_WAIT = 0
 PAGELOAD_TIMEOUT = 45
 SCREENSHOT_PATH = "output/final_view.png"
-
+```
 
 ## ✅ Expected Behavior
 
