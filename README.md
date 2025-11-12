@@ -80,10 +80,10 @@ pytest
 ```
 
 ## 📦 Artifacts Produced
-###File
-> - output/report.html	Self-contained HTML report
-> - output/final_view.png	Screenshot from the final page
-> - output/test.log	Clean log output
+
+> - output/report.html	    **Self-contained HTML report
+> - output/final_view.png   **Screenshot from the final page
+> - output/test.log	    **Clean log output
 
 ##⚙️ Configuration
 
@@ -100,12 +100,12 @@ SCREENSHOT_PATH = "output/final_view.png"
 
 ## ✅ Expected Behavior
 
-> - 1️⃣ Opens Twitch mobile site
-> - 2️⃣ Searches for the target game/channel
-> - 3️⃣ Scrolls twice through results (clearly visible)
-> - 4️⃣ Selects and opens a live stream
-> - 5️⃣ Waits for playback and takes a screenshot
-> - 6️⃣ Generates output/report.html
+>  1️⃣ Opens Twitch mobile site
+>  2️⃣ Searches for the target game/channel
+>  3️⃣ Scrolls twice through results (clearly visible)
+>  4️⃣ Selects and opens a live stream
+>  5️⃣ Waits for playback and takes a screenshot
+>  6️⃣ Generates output/report.html
 
 ## 📝 Notes & Decisions
 
