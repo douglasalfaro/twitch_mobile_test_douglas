@@ -1,8 +1,9 @@
-[![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)]()
-[![Selenium](https://img.shields.io/badge/Selenium-Automation-success?logo=selenium)]()
-[![Pytest](https://img.shields.io/badge/Pytest-Framework-orange?logo=pytest)]()
-[![Platform](https://img.shields.io/badge/Platform-Windows%20|%20Mac%20|%20Linux-lightgrey)]()
-[![License](https://img.shields.io/badge/License-MIT-yellow)]()
+![Python](https://img.shields.io/badge/Python-3.11+-blue?logo=python&logoColor=white)
+![Selenium](https://img.shields.io/badge/Selenium-4.x-brightgreen?logo=selenium&logoColor=white)
+![Pytest](https://img.shields.io/badge/Pytest-tested%20✔️-orange?logo=pytest)
+![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Cross--Platform-lightgrey)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+![Automation](https://img.shields.io/badge/Framework-Page%20Object%20Model-critical)
 
 # Twitch Mobile UI Automation (Pytest + Selenium)
 
