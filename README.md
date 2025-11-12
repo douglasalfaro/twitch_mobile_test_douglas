@@ -1,7 +1,7 @@
 # Twitch Mobile UI Automation (Pytest + Selenium)
 
 <p align="center">
-  <img src="./demo_run.gif" alt="Demo run" width="500"/>
+  <img src="./demo_run.gif" alt="Demo run" width="450"/>
 </p>
 
 
@@ -15,64 +15,72 @@
 
 ---
 
-## Tech Stack
-
-- **Python 3.11**
+## 🧰 Tech Stack
+- **Python 3.11+**
 - **Selenium 4**
-- **Pytest** (+ `pytest-html` reporting)
-- **webdriver-manager** (auto ChromeDriver)
-- **Page Object Model (POM)** layout
+- **Pytest** (+ `pytest-html` for reporting)
+- **webdriver-manager** (auto ChromeDriver setup)
+- **Page Object Model (POM)** architecture
 
 ---
 
-## Project Structure
-
+## 🗂️ Project Structure
+twitch_mobile_test_douglas/
 ├── core/
-│ ├── config.py # Tweak base URL, device name, timeouts, screenshot path
-│ ├── driver_setup.py # Chrome mobile emulation, global timeouts
+│ ├── config.py # Base URL, device name, timeouts, screenshot path
+│ ├── driver_setup.py # Chrome mobile emulation, timeouts, driver init
 │ ├── waits.py # Explicit wait helpers
-│ └── logging_setup.py # Clean test logs in output/test.log
+│ └── logging_setup.py # Test log configuration
+│
 ├── screens/
 │ ├── home_screen.py # Navigation to search page
-│ ├── search_screen.py # Enter query, double-scroll, open first result
-│ └── streamer_screen.py # Dismiss popups, wait for stream, best-effort play
+│ ├── search_screen.py # Enter query, scroll twice, open first result
+│ └── streamer_screen.py # Handle popups, start playback, wait for load
+│
 ├── tests/
 │ ├── conftest.py # Pytest fixtures (driver, logging, reporting)
-│ └── test_twitch_mobile.py
-├── output/ # report.html, screenshots, logs (created on run)
-├── requirements.txt
-├── pytest.ini # HTML report + CLI logging defaults
-└── demo_run.gif # Short demo of the local run
+│ └── test_twitch_mobile.py # Main UI test logic
+│
+├── output/
+│ ├── report.html # Generated test report
+│ ├── final_view.png # Screenshot of final page
+│ └── test.log # Clean log output
+│
+├── demo_run.gif # Demo animation of local test
+├── requirements.txt # Dependencies
+├── pytest.ini # Pytest configuration
+└── README.md # Documentation
+---
 
+## 🧪 How to Run (Windows)
+> **Prerequisites:**  
+> - Python **3.11+**  
+> - Google Chrome installed  
 
 ---
 
-## How to Run (Windows)
-
-> Prereqs: Python 3.11+, Google Chrome installed.
-
+### 1 Create and activate a virtual environment
 ```powershell
-# 1) Create and activate venv
 py -m venv .venv
 .\.venv\Scripts\Activate.ps1
 
-# 2) Install deps
+### 2 Install dependencies
+```powershell
 pip install -r requirements.txt
 
-# 3) Run tests (generates report.html + screenshot)
+
+### 3 Run tests (generates report + screenshot)
+```powershell
 pytest
 
 
-Artifacts produced
-
+## Artifacts produced
 report.html (self-contained HTML report)
-
 output/final_view.png (screenshot from the final page)
-
 output/test.log (clean test log)
 
 
-Configuration
+## Configuration
 
 Edit core/config.py:
 
@@ -85,24 +93,26 @@ PAGELOAD_TIMEOUT = 45
 SCREENSHOT_PATH = "output/final_view.png"
 
 
-Notes & Decisions
+## ✅ Expected Behavior
+Opens Twitch mobile site
+Searches for the target game/channel
+Scrolls twice through results
+Selects and opens a live stream
+Waits for playback and takes a screenshot
+Generates report.html under /output
 
+
+## Notes & Decisions
 Mobile emulation via Chrome’s predefined device profiles (consistent viewport & UA).
-
 Robust selectors + fallbacks to handle Twitch’s dynamic/Spa UI.
-
 Two-step scroll uses smooth, separated gestures for clear visibility in the GIF.
-
 Best-effort stream start (muted autoplay where possible) with popup handling.
 
 
-Run Proof
-
+## Run Proof
 See the embedded demo GIF above.
-
 After pytest, open report.html for pass/fail and timing details.
 
-Contact
-
+##Contact
 Douglas Alfaro
 Email: douglasalfaro94@gmail.com
