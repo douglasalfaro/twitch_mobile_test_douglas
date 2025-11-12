@@ -128,9 +128,46 @@ SCREENSHOT_PATH = "output/final_view.png"
 
 ## 🧾 Run Proof
 
-> - See the embedded demo GIF above
+ - See the embedded demo GIF above
 
-> - After running pytest, open output/report.html for pass/fail and timing details
+ - After running pytest, open output/report.html for pass/fail and timing details
+
+## 🧠 Senior-Level Design Decisions
+
+- **Page Object Model (POM) Architecture:**  
+  Each screen (Home, Search, Streamer) is isolated as a class, encapsulating selectors and actions.  
+  This design minimizes coupling and allows scalable test extension for new flows.
+
+- **Resilient Synchronization:**  
+  Custom wait helpers (`wait_visible`, `wait_clickable`) replace arbitrary sleeps, ensuring stable runs under dynamic Twitch SPA behavior.
+
+- **Smart Scrolling Logic:**  
+  Uses measured offset tracking and fallback recovery to handle lazy-loading or fixed-height views.  
+  It scrolls intelligently rather than relying on pixel guesses.
+
+- **Environment Independence:**  
+  `webdriver-manager` automatically provisions ChromeDriver and manages versioning — no manual setup needed.  
+  The config file (`core/config.py`) centralizes device type, timeouts, and URLs, making the suite portable across machines and CI.
+
+- **Self-contained Reporting:**  
+  `pytest-html` produces a single HTML artifact with embedded screenshots for easy CI/CD integration and traceability.
+
+- **Scalable Extensibility:**  
+  The structure supports adding more modules (e.g., Login, Chat, Following) without touching core test logic.  
+  Test data and environment config can easily be externalized (e.g., JSON, YAML, or environment variables).
+
+- **Error Resilience:**  
+  StreamerScreen methods use best-effort recovery (popup dismissal, retry playback) rather than hard failures,  
+  demonstrating real-world robustness expected in production UI automation.
+
+---
+
+## 🚀 Why This Project Demonstrates Senior-Level Engineering
+
+- Architected for **growth and maintainability** (can scale to multiple Twitch features).  
+- **Automates a live, asynchronous, SPA-based mobile site** — complex real-world use case.  
+- Implements **clean abstractions**, **fault tolerance**, and **CI-ready reporting**.  
+- Reflects a **professional QA automation standard** seen in enterprise-level frameworks.
 
 ## 👤 Contact
 
