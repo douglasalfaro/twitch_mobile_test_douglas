@@ -1,0 +1,30 @@
+﻿# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Virtual env
+.venv/
+env/
+venv/
+
+# Pytest cache
+.pytest_cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Selenium/WebDriver cache
+.wdm/
+
+# Outputs (keep the demo assets we want)
+output/
+!output/final_view.png
+
+# Reports (we’ll keep the HTML)
+# (Comment next line if you want to commit report.html each run)
+# report.html
