@@ -52,40 +52,37 @@ twitch_mobile_test_douglas/
 ├── pytest.ini               # Pytest configuration
 └── README.md                # Documentation
 
+```text
 
 ---
 
 ## 🧪 How to Run (Windows)
-> **Prerequisites:**  
-> - Python **3.11+**  
-> - Google Chrome installed  
+
+### Prerequisites
+
+> - Python 3.11+
+
+> - Google Chrome installed
 
 ### 1️⃣ Create and activate a virtual environment
-```powershell
 py -m venv .venv
 .\.venv\Scripts\Activate.ps1
 
 ### 2️⃣ Install dependencies
-```powershell
 pip install -r requirements.txt
 
-
 ### 3️⃣ Run tests (generates report + screenshot)
-```powershell
 pytest
 
----
+## 📦 Artifacts Produced
+###File
+> - output/report.html	Self-contained HTML report
+> - output/final_view.png	Screenshot from the final page
+> - output/test.log	Clean log output
 
-## Artifacts produced
-report.html (self-contained HTML report)
-output/final_view.png (screenshot from the final page)
-output/test.log (clean test log)
+##⚙️ Configuration
 
----
-
-## Configuration
-
-Edit core/config.py:
+Edit core/config.py as needed:
 
 BASE_URL = "https://m.twitch.tv/"
 SEARCH_TERM = "StarCraft II"   # required by the task (adjust if needed)
@@ -95,32 +92,32 @@ IMPLICIT_WAIT = 0
 PAGELOAD_TIMEOUT = 45
 SCREENSHOT_PATH = "output/final_view.png"
 
----
-
 ## ✅ Expected Behavior
-Opens Twitch mobile site
-Searches for the target game/channel
-Scrolls twice through results
-Selects and opens a live stream
-Waits for playback and takes a screenshot
-Generates report.html under /output
 
----
+> - 1️⃣ Opens Twitch mobile site
+> - 2️⃣ Searches for the target game/channel
+> - 3️⃣ Scrolls twice through results (clearly visible)
+> - 4️⃣ Selects and opens a live stream
+> - 5️⃣ Waits for playback and takes a screenshot
+> - 6️⃣ Generates output/report.html
 
-## Notes & Decisions
-Mobile emulation via Chrome’s predefined device profiles (consistent viewport & UA).
-Robust selectors + fallbacks to handle Twitch’s dynamic/Spa UI.
-Two-step scroll uses smooth, separated gestures for clear visibility in the GIF.
-Best-effort stream start (muted autoplay where possible) with popup handling.
+## 📝 Notes & Decisions
 
----
+Mobile emulation via Chrome’s predefined device profiles for deterministic viewport & UA
 
-## Run Proof
-See the embedded demo GIF above.
-After pytest, open report.html for pass/fail and timing details.
+Robust selectors + fallbacks to handle Twitch’s dynamic SPA UI
 
----
+Two-step scroll uses smooth, separated gestures for clear visibility in the GIF
 
-##Contact
+Best-effort stream start (muted autoplay where possible) with popup handling
+
+## 🧾 Run Proof
+
+See the embedded demo GIF above
+
+After running pytest, open output/report.html for pass/fail and timing details
+
+## 👤 Contact
+
 Douglas Alfaro
-Email: douglasalfaro94@gmail.com
+📧 douglasalfaro94@gmail.com
