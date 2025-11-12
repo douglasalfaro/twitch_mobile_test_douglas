@@ -1,7 +1,7 @@
 # Twitch Mobile UI Automation (Pytest + Selenium)
 
 <p align="center">
-  <img src="./demo_run.gif" alt="Demo run" width="450"/>
+  <img src="./demo_run.gif" alt="Demo run" width="300"/>
 </p>
 
 
@@ -58,19 +58,17 @@ twitch_mobile_test_douglas/
 > - Python **3.11+**  
 > - Google Chrome installed  
 
----
-
-### 1 Create and activate a virtual environment
+### 1️⃣ Create and activate a virtual environment
 ```powershell
 py -m venv .venv
 .\.venv\Scripts\Activate.ps1
 
-### 2 Install dependencies
+### 2️⃣ Install dependencies
 ```powershell
 pip install -r requirements.txt
 
 
-### 3 Run tests (generates report + screenshot)
+### 3️⃣ Run tests (generates report + screenshot)
 ```powershell
 pytest
 
