@@ -52,7 +52,7 @@ twitch_mobile_test_douglas/
 ├── pytest.ini               # Pytest configuration
 └── README.md                # Documentation
 
-```text
+```
 
 ---
 
