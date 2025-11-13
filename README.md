@@ -177,6 +177,6 @@ SCREENSHOT_PATH = "output/final_view.png"
 ## 🚀 Senior-Level Engineering
 
 - Architected for **growth and maintainability** (can scale to multiple Twitch features).  
-- **Automates a live, asynchronous, SPA-based mobile site** — complex real-world use case.  
+- **Automates a live, asynchronous, SPA-based mobile site** 
 - Implements **clean abstractions**, **fault tolerance**, and **CI-ready reporting**.  
-- Reflects a **professional QA automation standard** seen in enterprise-level frameworks.
+- **professional QA automation standard**
