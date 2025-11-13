@@ -179,4 +179,4 @@ SCREENSHOT_PATH = "output/final_view.png"
 - Architected for **growth and maintainability** (can scale to multiple Twitch features).  
 - **Automates a live, asynchronous, SPA-based mobile site** 
 - Implements **clean abstractions**, **fault tolerance**, and **CI-ready reporting**.  
-- **professional QA automation standard**
+- **Professional QA automation standard**
