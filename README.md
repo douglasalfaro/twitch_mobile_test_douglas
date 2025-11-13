@@ -166,8 +166,3 @@ SCREENSHOT_PATH = "output/final_view.png"
 - **Automates a live, asynchronous, SPA-based mobile site** — complex real-world use case.  
 - Implements **clean abstractions**, **fault tolerance**, and **CI-ready reporting**.  
 - Reflects a **professional QA automation standard** seen in enterprise-level frameworks.
-
-## 👤 Contact
-
-Douglas Alfaro
-📧 douglasalfaro94@gmail.com
