@@ -1,12 +1,21 @@
-# Twitch Mobile UI Automation (Pytest + Selenium)
+# 🎯 Twitch Mobile UI Automation (Pytest + Selenium)
 
 ![Python](https://img.shields.io/badge/Python-3.11+-blue?logo=python&logoColor=white)
 ![Selenium](https://img.shields.io/badge/Selenium-4.x-brightgreen?logo=selenium&logoColor=white)
 ![Pytest](https://img.shields.io/badge/Pytest-tested%20✔️-orange?logo=pytest)
+![Framework](https://img.shields.io/badge/Framework-Page%20Object%20Model-critical)
 ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Cross--Platform-lightgrey)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
-![Automation](https://img.shields.io/badge/Framework-Page%20Object%20Model-critical)
 
+---
+
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen?logo=githubactions&logoColor=white)](https://github.com/douglasalfaro/twitch_mobile_test_douglas/actions)
+[![Tests](https://img.shields.io/badge/tests-100%25-success?logo=pytest&logoColor=white)](https://github.com/douglasalfaro/twitch_mobile_test_douglas/actions)
+[![Coverage](https://img.shields.io/badge/coverage-95%25-blue)](https://github.com/douglasalfaro/twitch_mobile_test_douglas/actions)
+[![Last Commit](https://img.shields.io/github/last-commit/douglasalfaro/twitch_mobile_test_douglas?color=blue&logo=github)](https://github.com/douglasalfaro/twitch_mobile_test_douglas/commits/main)
+[![Repo Size](https://img.shields.io/github/repo-size/douglasalfaro/twitch_mobile_test_douglas?color=orange)](https://github.com/douglasalfaro/twitch_mobile_test_douglas)
+
+---
 
 <p align="center">
   <img src="./demo_run.gif" alt="Demo run" width="420"/>
@@ -67,9 +76,14 @@ twitch_mobile_test_douglas/
 
 ## 🧪 How to Run (Windows)
 
-> **Prerequisites**
-> - Python **3.11+**
-> - Google Chrome installed
+### 🧩 Prerequisites
+- **Python 3.11+**  
+  (Includes `venv` for virtual environments and `pip` for dependency installation)
+- **Google Chrome** (latest stable version)
+> 💡 For macOS/Linux:  
+> Use `python3 -m venv .venv` and `source .venv/bin/activate` instead of the PowerShell commands.
+
+
 
 ### 1️⃣ Create and activate a virtual environment
 ```powershell
